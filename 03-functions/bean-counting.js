@@ -39,3 +39,12 @@ console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
 // → 4
+
+// Rewrite the function using the closure function
+const countBs = (letter) => {
+  return string => countChar(string, letter);
+}
+
+const letterB = countBs("B");
+console.log(letterB("batch"));
+// -> 1

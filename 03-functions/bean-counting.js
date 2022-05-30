@@ -46,5 +46,5 @@ const countBs = (letter) => {
 }
 
 const letterB = countBs("B");
-console.log(letterB("batch"));
+console.log(letterB("BATCH"));
 // -> 1
